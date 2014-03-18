@@ -3,10 +3,8 @@
  */
 
 var express = require('express'),
-  routes = require('./routes'),
   http = require('http'),
-  path = require('path'),
-  config = require('./config');
+  path = require('path');
 
 var app = module.exports = express();
 
