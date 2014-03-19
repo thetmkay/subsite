@@ -8,14 +8,18 @@ html
 		link(rel="stylesheet", type="text/css", href="/foundation.css")
 		link(rel="stylesheet", type="text/css", href="/app.css")
 	body
-		.row
-			#mainContent
-				.columns.small-12.medium-6#mainLogo
-					img(src='/subtitles_logo.jpg')
-				.columns.small-12.medium-6.flex-video
-					iframe(width="524px",height="315px",src="//www.youtube.com/embed/IkJAXzqaGuE",frameborder="0", allowfullscreen)
-		.row
-			.columns.small-9
+		.row#logoPage
+			.columns.small-8
+					img(src="/subtitles_logo.jpg")
+			.columns.small-4
+					button play
+		.row#signUpForm
+			.columns.small-10
 				input(type="email")
-			.columns.small-3
-				button Sign Up!
+			.columns.small-2
+				button sign
+		.row#videoPage
+			.columns.small-centered.flex-video
+				iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
+		script(src="jquery.min.js")
+		script(src="/site.js")
