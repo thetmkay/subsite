@@ -62,6 +62,27 @@ $(document).on('ready', function() {
 		hideVideo();
 	});
 
+	$("#signUpForm input").focus(function(){
+		$("small.error").addClass('hideError');
+		// $(this).removeClass('error');
+	});
+
+	$("#signUp").click(function() {
+		var email = $("#signUpForm input").val();
+		$("small.error").addClass('hideError');
+		if(email)
+		{
+			//validate email
+			console.log(email);
+		}
+		else
+		{
+			console.log('fail');
+			$("small.error").removeClass('hideError');
+			// $("#signUpForm input").addClass('error');
+		}
+	})
+
 	$(window).keydown(function(event) {
 		if(event.which === 27) {
 			hideVideo();

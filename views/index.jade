@@ -7,6 +7,7 @@ html
 		title Subtitles For Glass
 		link(rel="stylesheet", type="text/css", href="/foundation.css")
 		link(rel="stylesheet", type="text/css", href="/app.css")
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
 	body
 		.row#logoPage
 			.columns.medium-8.small-12
@@ -16,10 +17,12 @@ html
 					.flex-video
 						iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
 		.row#signUpForm
-			.columns.small-10
-				input(type="email",placeholder="Add your email to get updates")
-			.columns.small-2
-				a.button.postfix.success Sign Up
+			.columns.medium-8.small-9.medium-offset-1
+				input.error(type="email",placeholder="Add your email to get updates")
+				small.error.hideError please use a valid email address
+			.columns.small-3.medium-2
+				a.button.postfix.success.radius#signUp Sign Up
+			.columns.medium-1
 		#videoModal.modalContainer
 			iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
 		#modalBackground.modalContainer

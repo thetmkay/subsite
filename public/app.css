@@ -6,12 +6,20 @@
 
 body {
 	background-color: #F9F9F9;
-	font-family:'Helvetica Neue';
+	font-family:'Open Sans';
+}
+
+a, small {
+	font-family:'Open Sans' !important;
 }
 
 * {
 	padding: 0;
 	margin: 0;
+}
+
+.hideError {
+	display:none !important;
 }
 
 /*#mainLogo {
@@ -23,6 +31,10 @@ body {
 
 #videoPage {
 }
+/*
+input.error {
+	border: solid 1px red;
+}*/
 
 @media (min-width: 40.063em) {
 	#playButton {
@@ -96,7 +108,7 @@ body {
 	padding-right: 0;
 }
 
-#signUpForm > div:last-child {
+#signUpForm > div:nth-child(2) {
 	padding-left: 0;
 }
 
