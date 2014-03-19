@@ -9,17 +9,22 @@ html
 		link(rel="stylesheet", type="text/css", href="/app.css")
 	body
 		.row#logoPage
-			.columns.small-8
+			.columns.medium-8.small-12
 					img(src="/subtitles_logo.jpg")
-			.columns.small-4
-					button play
+			.columns.medium-4.small-12
+					#playButton
+					.flex-video
+						iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
 		.row#signUpForm
 			.columns.small-10
-				input(type="email")
+				input(type="email",placeholder="Add your email to get updates")
 			.columns.small-2
-				button sign
-		.row#videoPage
-			.columns.small-centered.flex-video
-				iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
+				a.button.postfix.success Sign Up
+		#videoModal.modalContainer
+			iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
+		#modalBackground.modalContainer
 		script(src="jquery.min.js")
+		script(src="/bootstrap.min.js")
 		script(src="/site.js")
+		
+
