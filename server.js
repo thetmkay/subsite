@@ -13,6 +13,7 @@ var app = module.exports = express();
  */
 
 // all environments
+var port = process.env.PORT || 3000;
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
@@ -54,5 +55,5 @@ app.get('*', function(req,res) {
 console.log("starting server");
 
 http.createServer(app).listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on port ' + port);
 });
