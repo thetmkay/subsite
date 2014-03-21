@@ -70,14 +70,14 @@ $(document).on('ready', function() {
 	$("#signUp").click(function() {
 		var email = $("#signUpForm input").val();
 		$("small.error").addClass('hideError');
-		if(email)
+		if(email && email.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i))
 		{
 			//validate email
-			console.log(email);
+			jQuery.post('/api/register',{'email':email});
+			$("#signUpForm input").val("");
 		}
 		else
 		{
-			console.log('fail');
 			$("small.error").removeClass('hideError');
 			// $("#signUpForm input").addClass('error');
 		}
