@@ -4,9 +4,13 @@
 
 var express = require('express'),
   http = require('http'),
-  path = require('path');
+  path = require('path'),
+  config = require('./config'),
+  mongo = require('./mongo_api');
 
 var app = module.exports = express();
+
+mongo.setDB("mongodb://" + config.user + ":" + config.password + "@oceanic.mongohq.com:10028/subtitles");
 
 /**
  * Configuration
@@ -33,6 +37,8 @@ app.use(app.router);
 app.get('/', function(req,res) {
 	res.render('index');
 });
+
+app.post('/api/register', mongo.registerEmail);
 
 app.get('*', function(req,res) {
 	res.render('error');
