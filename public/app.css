@@ -50,6 +50,7 @@ input.error {
 	
 	#playButton:hover {
 		opacity: 0.75;
+		cursor:pointer;
 	}
 
 	#logoPage .flex-video {
