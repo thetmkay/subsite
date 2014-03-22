@@ -40,7 +40,7 @@ input.error {
 	#playButton {
 		width: 90px;
 		height: 90px;
-		background-image: url('/playbutton.png');
+		background-image: url('/playbuttongreen.png');
 		background-size:contain;
 		background-repeat: no-repeat;
 		display: inline-block !important;
@@ -103,7 +103,20 @@ input.error {
 
 }
 
+#contactUs {
+	text-align: center;
+	font-size: small;
+	font-family: 'Open Sans';
+	
+}
 
+#contactUs a {
+	color: #61B329;
+}
+
+#contactUs a:hover {
+	color: #578926;
+}
 
 #signUpForm > div:first-child {
 	padding-right: 0;

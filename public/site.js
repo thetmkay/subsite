@@ -17,7 +17,7 @@ $(document).on('ready', function() {
 
 	var setWindowSize = function() {
 		var height = $(window).height();
-		var mainHeight = Math.floor(height*0.8);
+		var mainHeight = Math.floor(height*0.75);
 		videoHeight = mainHeight + "px";
 		var subHeight = Math.ceil(height*0.2);
 		$("#logoPage").css({
@@ -32,6 +32,9 @@ $(document).on('ready', function() {
 		});
 		$("#signUpForm").css({
 			'height': subHeight + 'px'
+		});
+		$("#contactUs").css({
+			'height': (height*0.05) + 'px'
 		});
 
 		resizeVideo();
