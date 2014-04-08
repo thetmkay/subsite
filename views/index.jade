@@ -4,21 +4,21 @@ html
 		meta(charset='utf8')
 		meta(name="viewport", content="width=device-width")
 		base(href='/')
-		title Subtitles For Glass
+		title subbr
 		link(rel="stylesheet", type="text/css", href="/foundation.css")
 		link(rel="stylesheet", type="text/css", href="/app.css")
 		link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
 	body
 		.row#logoPage
-			.columns.medium-8.small-12
+			.columns.medium-7.small-12
 					img(src="/subtitles_logo.jpg")
-			.columns.medium-4.small-12
-					#playButton
+			.columns.medium-5.small-12
+					a#playVideo play video
 					.flex-video
 						iframe(width="560px",height="315px",src="//www.youtube.com/embed/-RwWhN29b6E",frameborder="0", allowfullscreen)
 		.row#signUpForm
 			.columns.medium-8.small-9.medium-offset-1
-				input.error(type="email",placeholder="Add your email to get updates")
+				input.error(type="email",placeholder="Register your email to get the app")
 				small.error.hideError please use a valid email address
 			.columns.small-3.medium-2
 				a.button.postfix.success.radius#signUp Sign Up

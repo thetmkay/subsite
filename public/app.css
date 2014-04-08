@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #F9F9F9;
+	background-color: #FFFFFF;
 	font-family:'Open Sans';
 }
 
@@ -47,6 +47,11 @@ input.error {
 		visibility: visible !important;
 		vertical-align: middle;
 	}
+
+	#playVideo {
+		display: inline-block !important;
+		visibility: visible !important;
+	}
 	
 	#playButton:hover {
 		opacity: 0.75;
@@ -60,6 +65,12 @@ input.error {
 }
 
 #playButton {
+	display: none;
+	visibility: hidden;
+}
+
+#playVideo {
+	color: #61B329;
 	display: none;
 	visibility: hidden;
 }
@@ -93,7 +104,7 @@ input.error {
 }
 
 #logoPage > div:first-child{
-	text-align: right;
+	text-align: center;
 }
 #logoPage > div:last-child{
 	text-align: center;

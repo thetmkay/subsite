@@ -55,7 +55,7 @@ $(document).on('ready', function() {
 		$("#modalBackground").fadeOut(500);
 	}
 
-	$("#playButton").click(function() {
+	$("#playVideo").click(function() {
 		$("#modalBackground").fadeIn(300, function() {
 			$("#videoModal").fadeIn(300);
 		});
